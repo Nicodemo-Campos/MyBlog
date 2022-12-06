@@ -14,7 +14,7 @@ body {
     font-size: 16px;
     font-weight: 400;
     line-height: 1.8;
-    color: black;
+    color: #000000;
 }
 
 h1 {
@@ -84,7 +84,7 @@ nav {
 }
 
 .logo a span {
-    color: black;
+    color: #c3c3c3;
     opacity: .5;
 }
 
@@ -163,7 +163,7 @@ nav :where(.menu-trigger, .serach-trigger):hover,
 
 header.fixed {
     line-height: 60px;
-    background-color: red;
+    background-color: #05277D;
     z-index: 1100;
     animation:  show .3s;
 }
@@ -193,7 +193,7 @@ header.fixed {
     right: 0;
     width: 320px;
     height: 100vh;
-    background-color: black;
+    background-color: #324D93;
     overflow: auto;
     -webkit-overflow-scrolling: touch;
     z-index: 1010;
@@ -243,7 +243,8 @@ header.fixed {
     display: flex;
     font-size: 80%;
     width: 100%;
-    color: #fff;
+    /* Color temporal */
+    color: yellow;
     line-height: 1.8;
     padding: 5em 3em 2em;
     margin-bottom: 2em;
@@ -286,7 +287,7 @@ header.fixed {
 .hero {
     position: relative;
     height: 800px;
-    background-color: red;
+    background-color: #05277d;
 }
 
 .hero .slide {
@@ -361,7 +362,7 @@ header.fixed {
     left: 0;
     width: 5px;
     height: 5px;
-    background-color: black;
+    background-color: #000000;
     border-radius: 50%;
     opacity: .35;
 }
@@ -391,9 +392,10 @@ header.fixed {
 }
 
 .read-more {
+    /* Color temporario */
     background-color:  #fff;
     border: 1px solid #fff;
-    color: black;
+    color: #000000;
     margin: 0 auto;
     box-shadow: grey;
 }
@@ -405,7 +407,7 @@ header.fixed {
 
 .swiper-pagination .swiper-pagination-bullet-active {
     position: relative;
-    background-color: purple;
+    background-color: #800080;
 }
 
 .swiper .swiper-pagination .swiper-pagination-bullet-active::before {
@@ -422,7 +424,7 @@ header.fixed {
 
 .section {
     position: relative;
-    background-color: aqua;
+    background-color: #05277d;
     z-index: 1003;
 }
 
@@ -437,7 +439,7 @@ header.fixed {
     position: relative;
     padding: 100px 0;
     background-color: #fff;
-    box-shadow: grey;
+    box-shadow: #324D93;
     overflow: hidden;
 }
 
@@ -446,7 +448,7 @@ header.fixed {
     position: absolute;
     width: 500px;
     height: 500px;
-    background-color: red;
+    background-color: #05277d;
     border-radius: 50%;
     top: -450px;
     left: 50%;
@@ -471,7 +473,7 @@ header.fixed {
     width: 50px;
     height: 1px;
     margin-left: -25px;
-    background-color: blueviolet;
+    background-color: #000000;
 }
 
 .section main :where(.post-list, .comment-form) {
@@ -499,15 +501,15 @@ article .content p {
 
 article footer .read-more,
 .comment-form form .submit {
-    background-color: red;
+    background-color: #324D93;
     margin: 2em 0 0;
     color: #fff;
     border-color: transparent;
 }
 
 article footer .read-more:hover{
-    border-color: red;
-    color: red;
+    border-color: #324D93;
+    color: #800080;
 }
 
 .section main h2 {
@@ -517,7 +519,7 @@ article footer .read-more:hover{
 }
 
 .section main .meta {
-    color: violet;
+    color: #800080;
     margin-bottom: 1em;
 }
 
@@ -527,14 +529,15 @@ article footer .read-more:hover{
 
 .section main .pagination button {
     border: 0;
-    background-color: purple;
+    background-color: #324D93;
+    color: #c3c3c3;
     cursor: pointer;
 }
 
 .section main .pagination button:hover {
-    background-color: black;
+    background-color: #c3c3c3;
     color: #fff;
-    box-shadow: purple;
+    box-shadow: #800080;
 }
 
 /* estilizando articulos */
@@ -548,7 +551,7 @@ article footer .read-more:hover{
 .section .container > footer {
     text-align: center;
     padding-top: 75px;
-    color: gray;
+    color: #c3c3c3;
 }
 
 footer .copyright {
@@ -580,11 +583,11 @@ footer .copyright {
     padding: 0 2em;
     margin: 0 7px 7px 0;
     line-height: 32px;
-    background-color: purple;
+    background-color: #324D93;
 }
 
 .single .tags a:hover {
-    background-color: red;
+    background-color: #083FC9;
     color: #fff;
 }
 
@@ -627,8 +630,8 @@ footer .copyright {
 
 .comment-form form .submit:hover {
     background-color: transparent;
-    border-color: red;
-    color: brown;
+    border-color: #800080;
+    color: #a52a2a;
 }
 
 /* search */
@@ -641,6 +644,7 @@ footer .copyright {
     bottom: 0;
     display: flex;
     align-items: center;
+    /* Color temporario */
     background-color: red;
     z-index: 8888;
     opacity: 0;
@@ -672,6 +676,7 @@ footer .copyright {
 }
 
 .search form input::placeholder {
+    /* Color temporario */
     color: purple;
 }
 
@@ -719,7 +724,7 @@ footer .copyright {
         transition: background-color .3s;
     }
     .menu > ul > li > a:hover {
-        background-color: rgb(255, 225, 225 / 20%);
+        background-color: rgb(225, 225, 225 / 20%);
         color: #fff;
     }
     .menu .search-trigger {
@@ -747,7 +752,7 @@ footer .copyright {
         visibility: visible;
     }
     .menu .titulos ul li a {
-        color: black;
+        color: #000000;
         font-size: 12px;
         width: 100%;
         padding: 1em 1.5em;
