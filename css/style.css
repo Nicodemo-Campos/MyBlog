@@ -387,7 +387,7 @@ header.fixed {
     text-align: center;
     line-height: 42px;
     text-transform: uppercase;
-    -webkit-transition:all, .3s ease-out;
+    /* -webkit-transition: all, .3s ease-out; */
     transform: all .3s ease-out;
 }
 
