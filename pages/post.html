@@ -21,7 +21,7 @@
 </head>
 <body>
     <!-- navegacion -->
-    <div id="page" class="site">
+    <div id="page" class="site single">
         <header>
             <div class="container">
                 <nav>
@@ -74,13 +74,13 @@
                     <div class="heading">
                         <h1>Eston son algunos de mis proyectos.</h1>
                             <div class="meta">
-                                <span class="date"><a href="#">December 6, 2022</a></span>
+                                <span class="date">December 6, 2022</span>
                                 <span class="category"><a href="#">Proyectos</a></span>
                                 <span class="comment"><a href="#">0</a></span>
                             </div>
                         <div class="autor">
                             <img src="../images/foto.jpg" alt="Nicodemo" title="Nicodemo">
-                            <h4>Nicodemo</h4>
+                            <h4><a href="#">Nicodemo</a></h4>
                         </div>
                     </div>
                 </div>
@@ -116,20 +116,20 @@
                         <h3>Comment</h3>
                         <form action="">
                             <div class="wrapper">
-                                <p><input type="text" placeholder="Name:"></p>
-                                <p><input type="email" placeholder="Email:"></p>
+                                <p><input type="text" placeholder="Name:" required></p>
+                                <p><input type="email" placeholder="Email:" required></p>
                                 <p><input type="text" placeholder="Website:"></p>
-                                <p class="co-textarea">
-                                    <textarea name="" id="" cols="30" rows="10" placeholder="¡Comenta!"></textarea>
-                                </p>
-                                <p class="co-cookies">
+                            </div>
+                            <p class="co-textarea">
+                                    <textarea name="" id="" cols="30" rows="10" placeholder="¡Comenta!" required></textarea>
+                            </p>
+                            <p class="co-cookies">
                                     <input type="checkbox" id="cookies">
                                     <label for="cookies">¡Estoy de acuerdo!</label>
-                                </p>
-                                <p class="co-submit">
+                            </p>
+                            <p class="co-submit">
                                     <input type="submit" value="Submit" class="btn submit read-more">
-                                </p>
-                            </div>
+                            </p>
                         </form>
                     </div>
                 </main>

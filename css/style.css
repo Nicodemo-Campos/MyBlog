@@ -324,13 +324,13 @@ header.fixed {
     padding-bottom: 75px;
 }
 
-.hero .slide li {
+.hero .slide :where(li, .heading) {
     display: flex;
     flex-direction: column;
     gap: 2.5em;
 }
 
-.hero .slide li h2 {
+.hero .slide :where(h1, h2) {
     font-size: clamp(1.75em, 6vw, 3em);
     text-transform: uppercase;
     color: #fff;
@@ -366,7 +366,7 @@ header.fixed {
     opacity: .35;
 }
 
-.meta a:hover{
+.meta a:hover, .single .autor a:hover{
     text-decoration: underline;
 }
 
@@ -474,7 +474,7 @@ header.fixed {
     background-color: blueviolet;
 }
 
-.section main .post-list {
+.section main :where(.post-list, .comment-form) {
     max-width: 728px;
     margin: 0 auto;
     padding: 0 2em;
@@ -497,7 +497,8 @@ article .content p {
     margin: 1.5em 0;
 }
 
-article footer .read-more {
+article footer .read-more,
+.comment-form form .submit {
     background-color: red;
     margin: 2em 0 0;
     color: #fff;
@@ -554,6 +555,82 @@ footer .copyright {
     font-size: 14px;
 }
 
+/* html post */
+
+.single .autor {
+    margin-top: 2em;
+}
+
+.single .autor {
+    width: 75px;
+    border-radius: 50%;
+    margin-bottom: 0.5em;
+    box-shadow: grey;
+}
+
+.single article figure figcaption {
+    /* font-family: ''; */
+    font-size: 12px;
+    padding: 0.5em 0 0;
+}
+
+.single .tags a {
+    max-width: fit-content;
+    font-size: 10px;
+    padding: 0 2em;
+    margin: 0 7px 7px 0;
+    line-height: 32px;
+    background-color: purple;
+}
+
+.single .tags a:hover {
+    background-color: red;
+    color: #fff;
+}
+
+/* comments */
+
+.comment-form h3 {
+    text-transform: uppercase;
+}
+
+.comment-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    font-size: 14px;
+}
+
+.comment-form form .wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 0 -1em;
+}
+
+.comment-form form .wrapper p {
+    padding: 0 1em;
+    margin-bottom: 1.5em;
+}
+
+.comment-form form :where(.wrapper, input, textarea) {
+    /* font-family: ; */
+    width: 100%;
+    line-height: 43px;
+    outline: 0;
+    padding: 0 1.5em;
+    border: 1px solid purple;
+}
+
+.comment-form form .submit {
+    cursor: pointer;
+}
+
+.comment-form form .submit:hover {
+    background-color: transparent;
+    border-color: red;
+    color: brown;
+}
+
 /* search */
 
 .search {
@@ -605,6 +682,12 @@ footer .copyright {
 }
 
 /* responsive */
+
+@media only screen and (max-width: 480px) {
+    .site .section > .container {
+        padding: 0;
+    }
+}
 
 @media screen and (min-width: 992px) {
     .profile, nav .menu-trigger {
@@ -678,5 +761,12 @@ footer .copyright {
         top: 0;
         left: auto!important;
         right: 100%;
+    }
+    .comment-form form .wrapper {
+        flex-direction: row;
+    }
+    .comment-form form .wrapper p {
+        flex: 1 0 33.3333%;
+        margin: 0;
     }
 }
