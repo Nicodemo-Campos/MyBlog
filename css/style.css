@@ -621,7 +621,7 @@ footer .copyright {
     line-height: 43px;
     outline: 0;
     padding: 0 1.5em;
-    border: 1px solid purple;
+    /* border: 1px solid purple; */
 }
 
 .comment-form form .submit {
