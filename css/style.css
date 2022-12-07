@@ -133,7 +133,7 @@ nav :where(.menu-trigger, .serach-trigger):hover,
 
 .menu .titulos::before, .menu .titulos::after,
 .swiper .swiper-pagination .swiper-pagination-bullet-active::before {
-    content: '';
+    /* content: ''; */
     position: absolute;
     width: 5px;
     height: 5px;
@@ -356,7 +356,7 @@ header.fixed {
 }
 
 .meta span::before {
-    content: '';
+    /* content: ''; */
     position: absolute;
     top: 11px;
     left: 0;
